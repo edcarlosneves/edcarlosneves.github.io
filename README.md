@@ -1,8 +1,6 @@
 ## Edcarlos Neves
 
-You can use the [editor on GitHub](https://github.com/edcarlosneves/edcarlosneves.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Possuo Graduação em Engenharia de Produção Química e especializações em Engenharia de Software e Big Data. Tenho experiência no desenvolvimento de softwares nas áreas de petróleo e gás (softwares técnicos/científicos), logística e e-commerce/marketplace. Principais ferramentas/tecnologias: Python, Django, Django Rest Framework, Celery, Redis, Sentry, Docker, Docker Compose, Amazon AWS, MySQL, PostgreSQL, Ansible, Jira, unittest, Pytest, Django Restless, Flask, Flask-Restful, NumPy, Matplotlib, SciPy, Numba, C++, Git, HTML, CSS, JS, Pytest, Selenium, Pandas, Kibana, Jenkins, Kubernetes, Graylog, Redshift, RabbitMQ, QuickSight.
 
 ### Markdown
 
