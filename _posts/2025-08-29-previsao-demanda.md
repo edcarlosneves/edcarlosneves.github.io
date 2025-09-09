@@ -21,9 +21,9 @@ Imagine que temos os dados de produção de uma empresa ao longo de três anos, 
 
 | | Trimestre 1 | Trimestre 2 | Trimestre 3 | Trimestre 4 |
 | :--- | :--- | :--- | :--- | :--- |
-| **Ano 1** | 60 | 120 | 110 | 10 |
-| **Ano 2** | 80 | 150 | 130 | 20 |
-| **Ano 3** | 100 | 180 | 150 | 30 |
+| **Ano 1** | 60 | 890 | 250 | 120 |
+| **Ano 2** | 80 | 1600 | 290 | 150 |
+| **Ano 3** | 130 | 2300 | 500 | 260 |
 
 Ao observar a tabela, notamos um padrão claro: a produção (e, consequentemente, a demanda) é muito maior nos trimestres 2 e 3. O nosso objetivo é **prever a demanda para cada trimestre do Ano 4**.
 
@@ -44,9 +44,9 @@ Agora, vamos abrir o nosso editor de código ou Jupyter Notebook e começar a pr
 
     # Dados de produção trimestral para os anos 1, 2 e 3
     dados = np.array([
-        [60, 120, 110, 10],  # Ano 1
-        [80, 150, 130, 20],  # Ano 2
-        [100, 180, 150, 30]  # Ano 3
+    [60, 890, 250, 120],  # Ano 1
+    [80, 1600, 290, 150],  # Ano 2
+    [130, 2300, 500, 260]  # Ano 3
     ])
 
     # Anos correspondentes aos dados
