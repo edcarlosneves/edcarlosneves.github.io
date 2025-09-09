@@ -2,7 +2,7 @@
 layout: post
 title:  "Como Fazer Previsão de Demanda com Ajustamento Sazonal em Python"
 date:   2025-08-29 12:00:52 -0300
-categories: jekyll update
+categories: posts python
 ---
 Prever a demanda futura é um dos desafios mais críticos para qualquer negócio. Quando as vendas ou a produção seguem padrões que se repetem ao longo do ano — como mais vendas de sorvete no verão ou de casacos no inverno — estamos lidando com a **sazonalidade**.
 
