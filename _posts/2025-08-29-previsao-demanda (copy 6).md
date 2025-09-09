@@ -61,12 +61,12 @@ O primeiro passo da nossa análise é calcular o total de produção e a média 
 # Calcular os totais anuais (soma das linhas)
 totais_anuais = np.sum(dados, axis=1)
 print(f"Totais anuais: {totais_anuais}")
-# Saída esperada: Totais anuais: [1320 2120 3190]
+# Saída esperada: Totais anuais: [300 380 460]
 
 # Calcular as médias anuais
 medias_anuais = np.mean(dados, axis=1)
 print(f"Médias trimestrais anuais: {medias_anuais}")
-# Saída esperada: Médias trimestrais anuais: [330.  530.  797.5]
+# Saída esperada: Médias trimestrais anuais: [ 75.  95. 115.]
 ```
 
 ### **Passo 4: Encontrar os Coeficientes de Sazonalidade**
@@ -96,14 +96,14 @@ coef_sazonais_medios = np.mean(coeficientes_sazonalidade, axis=0)
 
 print(f"\nCoeficientes Sazonais Médios (Fatores de Ajuste):")
 print(coef_sazonais_medios)
-# Saída esperada: [0.16525699 2.86661672 0.64390161 0.32422468]
+# Saída esperada: [0.8124... 1.7062... 1.4111... 0.0699...]
 ```
 
 Estes quatro números são os nossos **fatores de ajuste**. Um valor maior que 1 (como no T2 e T3) indica uma demanda acima da média, e um valor menor que 1 (T1 e T4) indica uma demanda abaixo da média.
 
 ### **Passo 5: Prever a Demanda Total para o Ano 4**
 
-Observando os totais anuais (`[1320 2120 3190]`), vemos uma tendência de crescimento. Vamos usar uma **regressão linear** para projetar qual será o total para o Ano 4.
+Observando os totais anuais (`[300, 380, 460]`), vemos uma tendência de crescimento. Vamos usar uma **regressão linear** para projetar qual será o total para o Ano 4.
 
 A função `np.polyfit()` faz este trabalho para nós, encontrando os coeficientes da reta (`y = ax + b`) que melhor se ajusta aos nossos dados.
 
@@ -120,21 +120,20 @@ ano_a_prever = 4
 total_previsto_ano4 = previsao_func(ano_a_prever)
 
 print(f"\nA equação da reta de tendência é: y = {coeficientes_reta[0]:.2f}x + {coeficientes_reta[1]:.2f}")
-# Saída esperada: A equação da reta de tendência é: y = 935.00x + 340.00
 print(f"A demanda total prevista para o Ano 4 é: {total_previsto_ano4:.2f}")
-# Saída esperada: A demanda total prevista para o Ano 4 é: 4080.00
+# Saída esperada: A demanda total prevista para o Ano 4 é: 540.00
 ```
 
 ### **Passo 6: Ajustar a Previsão com os Fatores Sazonais**
 
-Temos a previsão total para o Ano 4 (4080 unidades), mas como ela se distribui pelos trimestres?
+Temos a previsão total para o Ano 4 (540 unidades), mas como ela se distribui pelos trimestres?
 
 1.  Primeiro, calculamos a demanda trimestral base, como se não houvesse sazonalidade:
 
     ```python
     demanda_trimestral_base_ano4 = total_previsto_ano4 / 4
     print(f"\nDemanda trimestral base (sem ajuste) para o Ano 4: {demanda_trimestral_base_ano4:.2f}")
-    # Saída esperada: Demanda trimestral base (sem ajuste) para o Ano 4: 1020.00
+    # Saída esperada: 135.00
     ```
 
 2.  Finalmente, multiplicamos esta demanda base pelos nossos fatores de ajuste sazonais:
@@ -152,10 +151,10 @@ Temos a previsão total para o Ano 4 (4080 unidades), mas como ela se distribui 
 
 ```
 --- PREVISÃO FINAL PARA O ANO 4 ---
-Trimestre 1: 168.56 unidades
-Trimestre 2: 2923.95 unidades
-Trimestre 3: 656.78 unidades
-Trimestre 4: 330.71 unidades
+Trimestre 1: 109.68 unidades
+Trimestre 2: 230.34 unidades
+Trimestre 3: 190.51 unidades
+Trimestre 4: 9.44 unidades
 ```
 
 Como podemos ver, a nossa previsão final reflete perfeitamente o padrão sazonal observado nos dados históricos, com uma demanda muito maior nos trimestres 2 e 3.

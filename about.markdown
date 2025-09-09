@@ -1,18 +1,15 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Sobre
+permalink: /sobre/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## Edcarlos Neves
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Possuo Graduação em Engenharia de Produção Química e especializações em Engenharia de Software e Big Data. Tenho experiência no desenvolvimento de softwares nas áreas de petróleo e gás (softwares técnicos/científicos), logística e e-commerce/marketplace. Principais ferramentas/tecnologias: Python, Django, Django Rest Framework, Celery, Redis, Sentry, Docker, Docker Compose, Amazon AWS, MySQL, PostgreSQL, Ansible, Jira, unittest, Pytest, Django Restless, Flask, Flask-Restful, NumPy, Matplotlib, SciPy, Numba, C++, Git, HTML, CSS, JS, Pytest, Selenium, Pandas, Kibana, Jenkins, Kubernetes, Graylog, Redshift, RabbitMQ, QuickSight.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## Contato
 
+Meu canal no [YouTube](https://www.youtube.com/CodigoExato)
 
-[jekyll-organization]: https://github.com/jekyll
+Meu [Linkedin](https://www.linkedin.com/in/edcarlos-neves/)
