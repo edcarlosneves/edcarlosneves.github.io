@@ -4,9 +4,9 @@ title:  "Como Fazer Previsão de Demanda com Ajustamento Sazonal em Python"
 date:   2025-08-29 12:00:52 -0300
 categories: jekyll update
 ---
-Prever a demanda futura é um dos desafios mais críticos para qualquer negócio. Quando as vendas ou a produção seguem padrões que se repetem ao longo do ano — como mais vendas de sorvete no verão ou de casacos no inverno — estamos a lidar com a **sazonalidade**.
+Prever a demanda futura é um dos desafios mais críticos para qualquer negócio. Quando as vendas ou a produção seguem padrões que se repetem ao longo do ano — como mais vendas de sorvete no verão ou de casacos no inverno — estamos lidando com a **sazonalidade**.
 
-Neste tutorial, vamos explorar o **método de ajustamento sazonal**, uma técnica poderosa para prever a demanda em cenários como este. O melhor de tudo é que faremos isso de forma prática, passo a passo, utilizando Python e a biblioteca NumPy.
+Neste tutorial, vamos explorar o **método de ajustamento sazonal**, uma técnica poderosa para prever a demanda em cenários como este. Faremos isso de forma prática, passo a passo, utilizando Python e a biblioteca NumPy.
 
 **O que vamos fazer:**
 
@@ -26,7 +26,7 @@ Imagine que temos os dados de produção de uma empresa ao longo de três anos, 
 | **Ano 3** | 130 | 2300 | 500 | 260 |
 
 Ao observar a tabela, notamos um padrão claro: a produção (e, consequentemente, a demanda) é muito maior nos trimestres 2 e 3. O nosso objetivo é **prever a demanda para cada trimestre do Ano 4**.
-
+a
 ### **Passo 2: Configuração do Ambiente em Python**
 
 Para começar, vamos precisar apenas da biblioteca NumPy, que é fundamental para cálculos numéricos em Python. Se ainda não a tiver instalada, pode fazê-lo com um simples comando no seu terminal:
@@ -162,7 +162,5 @@ Como podemos ver, a nossa previsão final reflete perfeitamente o padrão sazona
 
 ### **Conclusão**
 
-Acabamos de implementar um método de previsão de demanda robusto e muito utilizado na indústria. Com apenas algumas linhas de Python, conseguimos capturar a tendência de crescimento e os padrões sazonais para gerar uma previsão informada para o futuro.
-
-Este método pode ser aplicado a diversos tipos de dados, desde vendas mensais a produção diária, tornando-se uma ferramenta valiosa no seu arsenal de análise de dados.
+Acabamos de implementar um método de previsão de demanda robusto. Com apenas algumas linhas de Python, conseguimos capturar a tendência de crescimento e os padrões sazonais para gerar uma previsão para o futuro. Este método pode ser aplicado a diversos tipos de dados, desde vendas mensais a produção diária.
 
