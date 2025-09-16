@@ -9,15 +9,13 @@ categories: posts python engenharia química
 
 Este tutorial mostra passo a passo como criar uma API para cálculo de propriedades termodinâmicas da água usando **CoolProp** e **Django REST Framework** organizada em **arquitetura hexagonal**.
 
----
 
-## Instalação das dependências
+### **Instalação das dependências**
 
 ```bash
 pip install django djangorestframework CoolProp
 ```
 
----
 
 ## Estrutura do projeto
 
@@ -39,7 +37,6 @@ coolprop_api/
             └── properties.py     # camada de domínio
 ```
 
----
 
 ## Criar projeto e app
 
@@ -61,7 +58,6 @@ INSTALLED_APPS = [
 
 Crie as pastas `application` e `domain` dentro de `api/`.
 
----
 
 ## Camada de Domínio — `api/domain/properties.py`
 
@@ -84,7 +80,6 @@ class WaterProperties:
         return PropsSI('S', 'T', temperatura, 'P', pressao, 'Water')
 ```
 
----
 
 ## Camada de Aplicação — `api/application/services.py`
 
@@ -122,7 +117,6 @@ class PropertyService:
         }
 ```
 
----
 
 ## Camada de Infraestrutura — `api/views.py`
 
@@ -153,7 +147,6 @@ class EntropiaView(APIView):
         return Response(data)
 ```
 
----
 
 ## Rotas — `api/urls.py`
 
@@ -180,7 +173,6 @@ urlpatterns = [
 ]
 ```
 
----
 
 ## Rodando
 
@@ -189,7 +181,6 @@ python manage.py migrate  # se ainda não fez migrations
 python manage.py runserver
 ```
 
----
 
 ## Testando Endpoints
 
@@ -202,13 +193,9 @@ python manage.py runserver
 * **Entropia**
   `http://127.0.0.1:8000/api/entropia/?temperatura=373.15&pressao=101325`
 
----
 
 ## Benefícios da Arquitetura Hexagonal
 
 * **Domínio** isolado (regras de negócio podem ser reaproveitadas).
 * **Aplicação** apenas orquestra os casos de uso.
 * **Infraestrutura** (Django REST Framework) só expõe endpoints HTTP.
-
----
-
