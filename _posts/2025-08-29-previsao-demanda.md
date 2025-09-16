@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Como Fazer Previsão de Demanda com Ajustamento Sazonal em Python"
-date:   2025-08-29 12:00:52 -0300
+date:   2025-08-29 00:00:00 -0300
 categories: posts python
 ---
 Prever a demanda futura é um dos desafios mais críticos para qualquer negócio. Quando as vendas ou a produção seguem padrões que se repetem ao longo do ano — como mais vendas de sorvete no verão ou de casacos no inverno — estamos lidando com a **sazonalidade**.
@@ -26,7 +26,7 @@ Imagine que temos os dados de produção de uma empresa ao longo de três anos, 
 | **Ano 3** | 130 | 2300 | 500 | 260 |
 
 Ao observar a tabela, notamos um padrão claro: a produção (e, consequentemente, a demanda) é muito maior nos trimestres 2 e 3. O nosso objetivo é **prever a demanda para cada trimestre do Ano 4**.
-a
+
 ### **Passo 2: Configuração do Ambiente em Python**
 
 Para começar, vamos precisar apenas da biblioteca NumPy, que é fundamental para cálculos numéricos em Python. Se ainda não a tiver instalada, pode fazê-lo com um simples comando no seu terminal:

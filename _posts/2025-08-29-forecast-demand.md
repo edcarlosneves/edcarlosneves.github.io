@@ -2,7 +2,7 @@
 
 layout: post
 title:  "How to Forecast Demand with Seasonal Adjustment in Python"
-date:   2025-08-29 12:00:52 -0300
+date:   2025-08-29 00:00:00 -0300
 categories: posts python
 ---
 
