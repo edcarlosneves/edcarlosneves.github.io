@@ -4,9 +4,6 @@ title:  "API de Propriedades Termodinâmicas com Django REST Framework (Arquitet
 date:   2025-09-15 00:00:00 -0300
 categories: posts python engenharia química
 ---
-
-# Tutorial: API de Propriedades Termodinâmicas com Django REST Framework (Arquitetura Hexagonal)
-
 Este tutorial mostra passo a passo como criar uma API para cálculo de propriedades termodinâmicas da água usando **CoolProp** e **Django REST Framework** organizada em **arquitetura hexagonal**.
 
 
