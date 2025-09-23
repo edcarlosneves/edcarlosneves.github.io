@@ -154,10 +154,10 @@ We have the total forecast for Year 4 (4080 units), but how is it distributed ac
 
 ```
 --- FINAL FORECAST FOR YEAR 4 ---
-Quarter 1: 168.56 units
-Quarter 2: 2923.95 units
-Quarter 3: 656.78 units
-Quarter 4: 330.71 units
+Quarter 1: 169 units
+Quarter 2: 2924 units
+Quarter 3: 657 units
+Quarter 4: 331 units
 ```
 
 As we can see, our final forecast perfectly reflects the seasonal pattern observed in the historical data, with much higher demand in quarters 2 and 3.
