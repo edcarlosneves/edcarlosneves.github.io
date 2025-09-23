@@ -145,17 +145,17 @@ Temos a previsão total para o Ano 4 (4080 unidades), mas como ela se distribui 
 
     print("\n--- PREVISÃO FINAL PARA O ANO 4 ---")
     for i, previsao in enumerate(previsao_ajustada_ano4):
-        print(f"Trimestre {i+1}: {previsao:.2f} unidades")
+        print(f"Trimestre {i+1}: {previsao:.0f} unidades")
     ```
 
 **Resultado Final Esperado:**
 
 ```
 --- PREVISÃO FINAL PARA O ANO 4 ---
-Trimestre 1: 168.56 unidades
-Trimestre 2: 2923.95 unidades
-Trimestre 3: 656.78 unidades
-Trimestre 4: 330.71 unidades
+Trimestre 1: 169 unidades
+Trimestre 2: 2924 unidades
+Trimestre 3: 657 unidades
+Trimestre 4: 331 unidades
 ```
 
 Como podemos ver, a nossa previsão final reflete perfeitamente o padrão sazonal observado nos dados históricos, com uma demanda muito maior nos trimestres 2 e 3.
